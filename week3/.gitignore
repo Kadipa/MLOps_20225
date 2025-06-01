@@ -1,0 +1,38 @@
+# Airflow logs and compiled files
+logs/
+*.log
+__pycache__/
+*.pyc
+
+# MLflow artifacts and trash
+mlruns/
+*/.trash/
+
+# Python virtual environments
+venv/
+.env/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Parquet and model files
+*.parquet
+*.pkl
+*.joblib
+*.h5
+
+# VSCode and macOS
+.vscode/
+.DS_Store
+
+# Airflow config if sensitive
+config/airflow.cfg
+
+# Docker volumes if mounted
+postgres-db-volume/
+
+.env
+requirements.txt
+
+docker-compose.yaml
+config
