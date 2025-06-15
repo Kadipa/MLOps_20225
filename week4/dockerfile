@@ -1,0 +1,11 @@
+FROM agrigorev/zoomcamp-model:mlops-2024-3.10.13-slim
+
+WORKDIR /app
+
+# Install dependencies
+RUN pip install --no-cache-dir pandas pyarrow scikit-learn
+
+# Copy your batch script
+COPY starter.py .
+
+ENTRYPOINT ["python", "starter.py"]
